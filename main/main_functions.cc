@@ -67,7 +67,7 @@ void setup() {
   }
 
   if (tensor_arena == NULL) {
-    tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+    tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
   }
   if (tensor_arena == NULL) {
     printf("Couldn't allocate memory of %d bytes\n", kTensorArenaSize);
@@ -126,6 +126,13 @@ void loop() {
   if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.int8)) {
     MicroPrintf("Image capture failed.");
   }
+
+  printf("Imagen capturada:\n");
+  for (int i = 0; i < kNumCols * kNumRows * kNumChannels; i++) {
+    input->data.int8[i] = ((uint8_t *)input->data.uint8)[i];  
+    printf("%d, ", input->data.int8[i]);
+  }
+  printf("\n");
 
   // Run the model on this input and make sure it succeeds.
   if (kTfLiteOk != interpreter->Invoke()) {
@@ -207,9 +214,9 @@ void loop() {
   int8_t twentyThree_score = output->data.uint8[twentyThree_Index];
   float twentyThree_score_f = (twentyThree_score - output->params.zero_point) * output->params.scale;
   printf("Score twenty-three: %f \n", twentyThree_score_f);
-  int8_t twentyFour_score = output->data.uint8[twentyFour_Index];
-  float twentyFour_score_f = (twentyFour_score - output->params.zero_point) * output->params.scale;
-  printf("Score twenty-four: %f \n", twentyFour_score_f);
+  // int8_t twentyFour_score = output->data.uint8[twentyFour_Index];
+  // float twentyFour_score_f = (twentyFour_score - output->params.zero_point) * output->params.scale;
+  // printf("Score twenty-four: %f \n", twentyFour_score_f);
 
   // Respond to detection
   // RespondToDetection(person_score_f, no_person_score_f);
