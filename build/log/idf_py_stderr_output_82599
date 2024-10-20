@@ -1,0 +1,190 @@
+[0;33m--- Warning: Serial ports accessed as /dev/tty.* will hang gdb if launched.[0m
+[0;33m--- Using /dev/cu.usbserial-110 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-110 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43fa: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:160
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e4408: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e4419: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43dd: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:159
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e4434: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:147 (discriminator 2)
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e4403: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e51fd: esp_nn_fully_connected_s8_ansi at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/fully_connected/esp_nn_fully_connected_ansi.c:37
+0x400dd7ad: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/fully_connected.cc:138
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e440a: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e440a: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43cc: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:158
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e440f: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43fa: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:160
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e5200: esp_nn_fully_connected_s8_ansi at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/fully_connected/esp_nn_fully_connected_ansi.c:39
+0x400dd7ad: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/fully_connected.cc:138
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e5200: esp_nn_fully_connected_s8_ansi at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/fully_connected/esp_nn_fully_connected_ansi.c:39
+0x400dd7ad: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/fully_connected.cc:138
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43fa: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:160
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e43fd: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:160
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400e4417: esp_nn_conv_s8_opt at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_opt.c:161
+0x400db4b5: tflite::(anonymous namespace)::Eval(TfLiteContext*, TfLiteNode*) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:231
+ (inlined by) Eval at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:294
+0x400d934a: tflite::MicroInterpreterGraph::InvokeSubgraph(int) at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:194
+0x400d9026: tflite::MicroInterpreter::Invoke() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:294
+0x400d863d: loop at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:138
+0x400d7f9a: tf_main() at /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0m

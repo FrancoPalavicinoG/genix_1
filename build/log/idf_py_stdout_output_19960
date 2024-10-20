@@ -1,0 +1,1493 @@
+ets Jun  8 2016 00:&&��SH�HH���0x1 (POWERON_RESET),boot:0�3 (SPI_FAST_FLASH_BOOT)
+config�� 0, SPIWP:0xee
+clk_drv:0x00,qE���0x00,d_drv:0x00,cs0_drv:0x00,�}����0x00,wp_drv:0x00
+mode:DIO, clock V��1
+load:0x3fff0030,len:6592
+load:0x����bb���16676
+ho 0 tail 12 room 4
+load:0x����bb���4
+load:0x40080404,len:427�H�����0x40080658
+[0;32mI (30) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 19 2024 21:03:24[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28270h (164464) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00038298 vaddr=3ff80000 size=00018h (    24) load[0m
+[0;32mI (137) esp_image: segment 2: paddr=000382b8 vaddr=3ffb0000 size=03504h ( 13572) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0003b7c4 vaddr=40080000 size=04854h ( 18516) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=307bch (198588) map[0m
+[0;32mI (207) esp_image: segment 5: paddr=000707e4 vaddr=40084854 size=0bdf4h ( 48628) load[0m
+[0;32mI (230) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (230) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (240) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (240) esp_psram: Speed: 80MHz[0m
+[0;32mI (244) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (251) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (260) cpu_start: Multicore app[0m
+[0;32mI (728) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (735) cpu_start: Pro cpu start user code[0m
+[0;32mI (735) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (736) app_init: Application information:[0m
+[0;32mI (738) app_init: Project name:     person_detection[0m
+[0;32mI (744) app_init: App version:      265f000-dirty[0m
+[0;32mI (749) app_init: Compile time:     Oct 19 2024 21:03:32[0m
+[0;32mI (755) app_init: ELF file SHA256:  7f511f957...[0m
+[0;32mI (761) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962[0m
+[0;32mI (767) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (772) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (777) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (782) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (789) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (795) heap_init: At 3FFB41D8 len 0002BE28 (175 KiB): DRAM[0m
+[0;32mI (801) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (808) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (814) heap_init: At 40090648 len 0000F9B8 (62 KiB): IRAM[0m
+[0;32mI (820) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (828) spi_flash: detected chip: generic[0m
+[0;32mI (832) spi_flash: flash io: qio[0m
+[0;33mW (836) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (847) main_task: Started on CPU0[0m
+[0;32mI (857) main_task: Calling app_main()[0m
+[0;32mI (857) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (857) cam_hal: cam init ok[0m
+[0;32mI (867) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (867) sccb: sccb_i2c_port=1[0m
+[0;32mI (867) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (907) camera: Detected camera at address=0x30[0m
+[0;32mI (907) camera: Detected OV2640 camera[0m
+[0;32mI (907) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (977) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (987) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (997) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1007) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1007) cam_hal: cam config ok[0m
+[0;32mI (1017) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Image Captured
+
+Score zero: 0.402344 
+Score one: 0.074219 
+Score two: 0.402344 
+Score three: 0.058594 
+Score four: 0.003906 
+Score five: 0.058594 
+Image Captured
+
+Score zero: 0.402344 
+Score one: 0.074219 
+Score two: 0.402344 
+Score three: 0.058594 
+Score four: 0.003906 
+Score five: 0.058594 
+Image Captured
+
+Score zero: 0.515625 
+Score one: 0.085938 
+Score two: 0.285156 
+Score three: 0.054688 
+Score four: 0.003906 
+Score five: 0.058594 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.039062 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.296875 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.296875 
+Image Captured
+
+Score zero: 0.074219 
+Score one: 0.027344 
+Score two: 0.035156 
+Score three: 0.425781 
+Score four: 0.132812 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.171875 
+Score one: 0.062500 
+Score two: 0.261719 
+Score three: 0.164062 
+Score four: 0.210938 
+Score five: 0.132812 
+Image Captured
+
+Score zero: 0.210938 
+Score one: 0.078125 
+Score two: 0.250000 
+Score three: 0.132812 
+Score four: 0.222656 
+Score five: 0.105469 
+Image Captured
+
+Score zero: 0.312500 
+Score one: 0.078125 
+Score two: 0.214844 
+Score three: 0.085938 
+Score four: 0.226562 
+Score five: 0.082031 
+Image Captured
+
+Score zero: 0.265625 
+Score one: 0.085938 
+Score two: 0.214844 
+Score three: 0.089844 
+Score four: 0.265625 
+Score five: 0.078125 
+Image Captured
+
+Score zero: 0.277344 
+Score one: 0.085938 
+Score two: 0.203125 
+Score three: 0.101562 
+Score four: 0.250000 
+Score five: 0.085938 
+Image Captured
+
+Score zero: 0.308594 
+Score one: 0.097656 
+Score two: 0.179688 
+Score three: 0.082031 
+Score four: 0.250000 
+Score five: 0.082031 
+Image Captured
+
+Score zero: 0.292969 
+Score one: 0.085938 
+Score two: 0.191406 
+Score three: 0.101562 
+Score four: 0.238281 
+Score five: 0.089844 
+Image Captured
+
+Score zero: 0.296875 
+Score one: 0.089844 
+Score two: 0.195312 
+Score three: 0.093750 
+Score four: 0.242188 
+Score five: 0.082031 
+Image Captured
+
+Score zero: 0.296875 
+Score one: 0.097656 
+Score two: 0.195312 
+Score three: 0.093750 
+Score four: 0.238281 
+Score five: 0.082031 
+Image Captured
+
+Score zero: 0.285156 
+Score one: 0.105469 
+Score two: 0.167969 
+Score three: 0.070312 
+Score four: 0.285156 
+Score five: 0.089844 
+Image Captured
+
+Score zero: 0.183594 
+Score one: 0.062500 
+Score two: 0.140625 
+Score three: 0.207031 
+Score four: 0.230469 
+Score five: 0.175781 
+Image Captured
+
+Score zero: 0.246094 
+Score one: 0.078125 
+Score two: 0.273438 
+Score three: 0.152344 
+Score four: 0.125000 
+Score five: 0.125000 
+Image Captured
+
+Score zero: 0.371094 
+Score one: 0.074219 
+Score two: 0.167969 
+Score three: 0.089844 
+Score four: 0.218750 
+Score five: 0.074219 
+Image Captured
+
+Score zero: 0.414062 
+Score one: 0.078125 
+Score two: 0.144531 
+Score three: 0.097656 
+Score four: 0.195312 
+Score five: 0.066406 
+Image Captured
+
+Score zero: 0.277344 
+Score one: 0.070312 
+Score two: 0.101562 
+Score three: 0.179688 
+Score four: 0.250000 
+Score five: 0.125000 
+Image Captured
+
+Score zero: 0.078125 
+Score one: 0.042969 
+Score two: 0.039062 
+Score three: 0.289062 
+Score four: 0.359375 
+Score five: 0.191406 
+Image Captured
+
+Score zero: 0.089844 
+Score one: 0.039062 
+Score two: 0.039062 
+Score three: 0.316406 
+Score four: 0.316406 
+Score five: 0.195312 
+Image Captured
+
+Score zero: 0.078125 
+Score one: 0.035156 
+Score two: 0.031250 
+Score three: 0.281250 
+Score four: 0.382812 
+Score five: 0.191406 
+Image Captured
+
+Score zero: 0.070312 
+Score one: 0.031250 
+Score two: 0.027344 
+Score three: 0.285156 
+Score four: 0.390625 
+Score five: 0.195312 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.027344 
+Score two: 0.027344 
+Score three: 0.273438 
+Score four: 0.398438 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.027344 
+Score two: 0.027344 
+Score three: 0.285156 
+Score four: 0.390625 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.031250 
+Score two: 0.023438 
+Score three: 0.273438 
+Score four: 0.394531 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.027344 
+Score two: 0.027344 
+Score three: 0.257812 
+Score four: 0.414062 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.031250 
+Score two: 0.027344 
+Score three: 0.257812 
+Score four: 0.414062 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.035156 
+Score two: 0.035156 
+Score three: 0.253906 
+Score four: 0.406250 
+Score five: 0.203125 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.031250 
+Score two: 0.031250 
+Score three: 0.253906 
+Score four: 0.410156 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.027344 
+Score two: 0.027344 
+Score three: 0.261719 
+Score four: 0.417969 
+Score five: 0.199219 
+Image Captured
+
+Score zero: 0.070312 
+Score one: 0.035156 
+Score two: 0.035156 
+Score three: 0.250000 
+Score four: 0.402344 
+Score five: 0.203125 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.035156 
+Score two: 0.035156 
+Score three: 0.273438 
+Score four: 0.398438 
+Score five: 0.199219 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.035156 
+Score two: 0.031250 
+Score three: 0.269531 
+Score four: 0.390625 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.203125 
+Score one: 0.054688 
+Score two: 0.046875 
+Score three: 0.363281 
+Score four: 0.027344 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.226562 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.210938 
+Score one: 0.054688 
+Score two: 0.046875 
+Score three: 0.359375 
+Score four: 0.035156 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.214844 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.343750 
+Score four: 0.035156 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.207031 
+Score one: 0.058594 
+Score two: 0.046875 
+Score three: 0.351562 
+Score four: 0.031250 
+Score five: 0.300781 
+Image Captured
+
+Score zero: 0.082031 
+Score one: 0.031250 
+Score two: 0.015625 
+Score three: 0.425781 
+Score four: 0.101562 
+Score five: 0.343750 
+Image Captured
+
+Score zero: 0.085938 
+Score one: 0.031250 
+Score two: 0.023438 
+Score three: 0.511719 
+Score four: 0.144531 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.074219 
+Score one: 0.027344 
+Score two: 0.015625 
+Score three: 0.507812 
+Score four: 0.128906 
+Score five: 0.242188 
+Image Captured
+
+Score zero: 0.093750 
+Score one: 0.035156 
+Score two: 0.019531 
+Score three: 0.468750 
+Score four: 0.144531 
+Score five: 0.234375 
+Image Captured
+
+Score zero: 0.113281 
+Score one: 0.042969 
+Score two: 0.027344 
+Score three: 0.402344 
+Score four: 0.164062 
+Score five: 0.250000 
+Image Captured
+
+Score zero: 0.109375 
+Score one: 0.039062 
+Score two: 0.023438 
+Score three: 0.429688 
+Score four: 0.156250 
+Score five: 0.238281 
+Image Captured
+
+Score zero: 0.109375 
+Score one: 0.039062 
+Score two: 0.027344 
+Score three: 0.453125 
+Score four: 0.156250 
+Score five: 0.214844 
+Image Captured
+
+Score zero: 0.105469 
+Score one: 0.039062 
+Score two: 0.023438 
+Score three: 0.433594 
+Score four: 0.167969 
+Score five: 0.230469 
+Image Captured
+
+Score zero: 0.097656 
+Score one: 0.039062 
+Score two: 0.023438 
+Score three: 0.460938 
+Score four: 0.144531 
+Score five: 0.230469 
+Image Captured
+
+Score zero: 0.089844 
+Score one: 0.035156 
+Score two: 0.023438 
+Score three: 0.511719 
+Score four: 0.121094 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.183594 
+Score one: 0.054688 
+Score two: 0.039062 
+Score three: 0.363281 
+Score four: 0.125000 
+Score five: 0.238281 
+Image Captured
+
+Score zero: 0.148438 
+Score one: 0.050781 
+Score two: 0.031250 
+Score three: 0.371094 
+Score four: 0.097656 
+Score five: 0.300781 
+Image Captured
+
+Score zero: 0.125000 
+Score one: 0.046875 
+Score two: 0.023438 
+Score three: 0.363281 
+Score four: 0.097656 
+Score five: 0.343750 
+Image Captured
+
+Score zero: 0.121094 
+Score one: 0.042969 
+Score two: 0.023438 
+Score three: 0.390625 
+Score four: 0.089844 
+Score five: 0.332031 
+Image Captured
+
+Score zero: 0.105469 
+Score one: 0.039062 
+Score two: 0.019531 
+Score three: 0.410156 
+Score four: 0.093750 
+Score five: 0.332031 
+Image Captured
+
+Score zero: 0.105469 
+Score one: 0.039062 
+Score two: 0.019531 
+Score three: 0.398438 
+Score four: 0.093750 
+Score five: 0.339844 
+Image Captured
+
+Score zero: 0.101562 
+Score one: 0.039062 
+Score two: 0.019531 
+Score three: 0.402344 
+Score four: 0.093750 
+Score five: 0.343750 
+Image Captured
+
+Score zero: 0.089844 
+Score one: 0.035156 
+Score two: 0.015625 
+Score three: 0.433594 
+Score four: 0.093750 
+Score five: 0.332031 
+Image Captured
+
+Score zero: 0.082031 
+Score one: 0.031250 
+Score two: 0.015625 
+Score three: 0.449219 
+Score four: 0.078125 
+Score five: 0.343750 
+Image Captured
+
+Score zero: 0.273438 
+Score one: 0.070312 
+Score two: 0.039062 
+Score three: 0.128906 
+Score four: 0.289062 
+Score five: 0.199219 
+Image Captured
+
+Score zero: 0.050781 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.210938 
+Score four: 0.414062 
+Score five: 0.289062 
+Image Captured
+
+Score zero: 0.035156 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.226562 
+Score four: 0.402344 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.035156 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.226562 
+Score four: 0.402344 
+Score five: 0.308594 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.242188 
+Score four: 0.351562 
+Score five: 0.351562 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.261719 
+Score four: 0.343750 
+Score five: 0.343750 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.253906 
+Score four: 0.347656 
+Score five: 0.347656 
+Image Captured
+
+Score zero: 0.031250 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.234375 
+Score four: 0.375000 
+Score five: 0.335938 
+Image Captured
+
+Score zero: 0.035156 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.238281 
+Score four: 0.386719 
+Score five: 0.312500 
+Image Captured
+
+Score zero: 0.031250 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.242188 
+Score four: 0.371094 
+Score five: 0.332031 
+Image Captured
+
+Score zero: 0.039062 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.226562 
+Score four: 0.406250 
+Score five: 0.296875 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.214844 
+Score four: 0.429688 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.214844 
+Score four: 0.429688 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.070312 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.222656 
+Score four: 0.398438 
+Score five: 0.273438 
+Image Captured
+
+Score zero: 0.070312 
+Score one: 0.027344 
+Score two: 0.015625 
+Score three: 0.226562 
+Score four: 0.382812 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.050781 
+Score one: 0.027344 
+Score two: 0.011719 
+Score three: 0.226562 
+Score four: 0.406250 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.027344 
+Score two: 0.011719 
+Score three: 0.238281 
+Score four: 0.367188 
+Score five: 0.296875 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.027344 
+Score two: 0.015625 
+Score three: 0.218750 
+Score four: 0.371094 
+Score five: 0.300781 
+Image Captured
+
+Score zero: 0.089844 
+Score one: 0.031250 
+Score two: 0.019531 
+Score three: 0.210938 
+Score four: 0.359375 
+Score five: 0.289062 
+Image Captured
+
+Score zero: 0.054688 
+Score one: 0.023438 
+Score two: 0.019531 
+Score three: 0.417969 
+Score four: 0.070312 
+Score five: 0.417969 
+Image Captured
+
+Score zero: 0.039062 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.457031 
+Score four: 0.062500 
+Score five: 0.410156 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.402344 
+Score four: 0.062500 
+Score five: 0.496094 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.003906 
+Score three: 0.441406 
+Score four: 0.054688 
+Score five: 0.464844 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.003906 
+Score three: 0.441406 
+Score four: 0.054688 
+Score five: 0.468750 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.003906 
+Score three: 0.441406 
+Score four: 0.054688 
+Score five: 0.468750 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.003906 
+Score three: 0.441406 
+Score four: 0.054688 
+Score five: 0.468750 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.453125 
+Score four: 0.054688 
+Score five: 0.453125 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.460938 
+Score four: 0.054688 
+Score five: 0.437500 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.464844 
+Score four: 0.054688 
+Score five: 0.441406 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.453125 
+Score four: 0.054688 
+Score five: 0.453125 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.015625 
+Score two: 0.007812 
+Score three: 0.449219 
+Score four: 0.058594 
+Score five: 0.449219 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.339844 
+Score four: 0.035156 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.339844 
+Score four: 0.035156 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.218750 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.351562 
+Score four: 0.031250 
+Score five: 0.285156 
+Image Captured
+
+Score zero: 0.207031 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.371094 
+Score four: 0.031250 
+Score five: 0.285156 
+Image Captured
+
+Score zero: 0.109375 
+Score one: 0.046875 
+Score two: 0.027344 
+Score three: 0.386719 
+Score four: 0.238281 
+Score five: 0.195312 
+Image Captured
+
+Score zero: 0.003906 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.539062 
+Score four: 0.031250 
+Score five: 0.414062 
+Image Captured
+
+Score zero: 0.003906 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.562500 
+Score four: 0.035156 
+Score five: 0.386719 
+Image Captured
+
+Score zero: 0.007812 
+Score one: 0.011719 
+Score two: 0.003906 
+Score three: 0.613281 
+Score four: 0.074219 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.007812 
+Score two: 0.007812 
+Score three: 0.554688 
+Score four: 0.046875 
+Score five: 0.363281 
+Image Captured
+
+Score zero: 0.054688 
+Score one: 0.011719 
+Score two: 0.015625 
+Score three: 0.492188 
+Score four: 0.046875 
+Score five: 0.375000 
+Image Captured
+
+Score zero: 0.035156 
+Score one: 0.011719 
+Score two: 0.011719 
+Score three: 0.535156 
+Score four: 0.039062 
+Score five: 0.367188 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.007812 
+Score two: 0.007812 
+Score three: 0.562500 
+Score four: 0.042969 
+Score five: 0.347656 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.007812 
+Score two: 0.007812 
+Score three: 0.550781 
+Score four: 0.039062 
+Score five: 0.363281 
+Image Captured
+
+Score zero: 0.007812 
+Score one: 0.015625 
+Score two: 0.011719 
+Score three: 0.515625 
+Score four: 0.078125 
+Score five: 0.375000 
+Image Captured
+
+Score zero: 0.007812 
+Score one: 0.011719 
+Score two: 0.011719 
+Score three: 0.554688 
+Score four: 0.054688 
+Score five: 0.363281 
+Image Captured
+
+Score zero: 0.007812 
+Score one: 0.011719 
+Score two: 0.007812 
+Score three: 0.566406 
+Score four: 0.070312 
+Score five: 0.335938 
+Image Captured
+
+Score zero: 0.007812 
+Score one: 0.011719 
+Score two: 0.011719 
+Score three: 0.558594 
+Score four: 0.128906 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.027344 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.335938 
+Score four: 0.375000 
+Score five: 0.246094 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.011719 
+Score two: 0.003906 
+Score three: 0.378906 
+Score four: 0.339844 
+Score five: 0.246094 
+Image Captured
+
+Score zero: 0.023438 
+Score one: 0.011719 
+Score two: 0.003906 
+Score three: 0.394531 
+Score four: 0.335938 
+Score five: 0.230469 
+Image Captured
+
+Score zero: 0.023438 
+Score one: 0.011719 
+Score two: 0.003906 
+Score three: 0.398438 
+Score four: 0.339844 
+Score five: 0.222656 
+Image Captured
+
+Score zero: 0.023438 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.410156 
+Score four: 0.332031 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.023438 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.425781 
+Score four: 0.328125 
+Score five: 0.214844 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.007812 
+Score two: 0.003906 
+Score three: 0.437500 
+Score four: 0.320312 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.011719 
+Score two: 0.003906 
+Score three: 0.511719 
+Score four: 0.218750 
+Score five: 0.230469 
+Image Captured
+
+Score zero: 0.195312 
+Score one: 0.054688 
+Score two: 0.042969 
+Score three: 0.363281 
+Score four: 0.031250 
+Score five: 0.312500 
+Image Captured
+
+Score zero: 0.355469 
+Score one: 0.074219 
+Score two: 0.085938 
+Score three: 0.257812 
+Score four: 0.042969 
+Score five: 0.187500 
+Image Captured
+
+Score zero: 0.039062 
+Score one: 0.015625 
+Score two: 0.027344 
+Score three: 0.585938 
+Score four: 0.078125 
+Score five: 0.253906 
+Image Captured
+
+Score zero: 0.023438 
+Score one: 0.011719 
+Score two: 0.019531 
+Score three: 0.656250 
+Score four: 0.097656 
+Score five: 0.195312 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.015625 
+Score two: 0.027344 
+Score three: 0.644531 
+Score four: 0.019531 
+Score five: 0.277344 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.019531 
+Score two: 0.027344 
+Score three: 0.667969 
+Score four: 0.035156 
+Score five: 0.234375 
+Image Captured
+
+Score zero: 0.015625 
+Score one: 0.015625 
+Score two: 0.027344 
+Score three: 0.695312 
+Score four: 0.039062 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.023438 
+Score two: 0.046875 
+Score three: 0.644531 
+Score four: 0.042969 
+Score five: 0.222656 
+Image Captured
+
+Score zero: 0.019531 
+Score one: 0.019531 
+Score two: 0.015625 
+Score three: 0.628906 
+Score four: 0.062500 
+Score five: 0.257812 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.035156 
+Score two: 0.023438 
+Score three: 0.460938 
+Score four: 0.207031 
+Score five: 0.230469 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.027344 
+Score two: 0.019531 
+Score three: 0.406250 
+Score four: 0.253906 
+Score five: 0.226562 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.503906 
+Score four: 0.140625 
+Score five: 0.253906 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.523438 
+Score four: 0.148438 
+Score five: 0.238281 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.503906 
+Score four: 0.156250 
+Score five: 0.242188 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.503906 
+Score four: 0.183594 
+Score five: 0.214844 
+Image Captured
+
+Score zero: 0.074219 
+Score one: 0.027344 
+Score two: 0.019531 
+Score three: 0.410156 
+Score four: 0.230469 
+Score five: 0.242188 
+Image Captured
+
+Score zero: 0.062500 
+Score one: 0.027344 
+Score two: 0.039062 
+Score three: 0.480469 
+Score four: 0.078125 
+Score five: 0.312500 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.585938 
+Score four: 0.085938 
+Score five: 0.250000 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.585938 
+Score four: 0.062500 
+Score five: 0.277344 
+Image Captured
+
+Score zero: 0.042969 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.597656 
+Score four: 0.062500 
+Score five: 0.269531 
+Image Captured
+
+Score zero: 0.046875 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.582031 
+Score four: 0.062500 
+Score five: 0.277344 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.562500 
+Score four: 0.062500 
+Score five: 0.281250 
+Image Captured
+
+Score zero: 0.050781 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.566406 
+Score four: 0.066406 
+Score five: 0.285156 
+Image Captured
+
+Score zero: 0.046875 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.601562 
+Score four: 0.066406 
+Score five: 0.257812 
+Image Captured
+
+Score zero: 0.050781 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.585938 
+Score four: 0.058594 
+Score five: 0.265625 
+Image Captured
+
+Score zero: 0.066406 
+Score one: 0.027344 
+Score two: 0.015625 
+Score three: 0.542969 
+Score four: 0.062500 
+Score five: 0.289062 
+Image Captured
+
+Score zero: 0.058594 
+Score one: 0.027344 
+Score two: 0.011719 
+Score three: 0.550781 
+Score four: 0.058594 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.050781 
+Score one: 0.023438 
+Score two: 0.011719 
+Score three: 0.574219 
+Score four: 0.054688 
+Score five: 0.289062 
+Image Captured
+
+Score zero: 0.046875 
+Score one: 0.019531 
+Score two: 0.011719 
+Score three: 0.601562 
+Score four: 0.050781 
+Score five: 0.273438 
+Image Captured
+
+Score zero: 0.039062 
+Score one: 0.019531 
+Score two: 0.007812 
+Score three: 0.605469 
+Score four: 0.050781 
+Score five: 0.273438 
+Image Captured
+
+Score zero: 0.175781 
+Score one: 0.050781 
+Score two: 0.035156 
+Score three: 0.371094 
+Score four: 0.085938 
+Score five: 0.285156 
+Image Captured
+
+Score zero: 0.171875 
+Score one: 0.050781 
+Score two: 0.058594 
+Score three: 0.382812 
+Score four: 0.085938 
+Score five: 0.250000 
+Image Captured
+
+Score zero: 0.175781 
+Score one: 0.058594 
+Score two: 0.058594 
+Score three: 0.390625 
+Score four: 0.093750 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.164062 
+Score one: 0.058594 
+Score two: 0.039062 
+Score three: 0.382812 
+Score four: 0.093750 
+Score five: 0.265625 
+Image Captured
+
+Score zero: 0.183594 
+Score one: 0.062500 
+Score two: 0.039062 
+Score three: 0.332031 
+Score four: 0.097656 
+Score five: 0.285156 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.066406 
+Score two: 0.042969 
+Score three: 0.308594 
+Score four: 0.113281 
+Score five: 0.250000 
+Image Captured
+
+Score zero: 0.292969 
+Score one: 0.070312 
+Score two: 0.058594 
+Score three: 0.191406 
+Score four: 0.132812 
+Score five: 0.250000 
+Image Captured
+
+Score zero: 0.250000 
+Score one: 0.062500 
+Score two: 0.058594 
+Score three: 0.164062 
+Score four: 0.238281 
+Score five: 0.226562 
+Image Captured
+
+Score zero: 0.269531 
+Score one: 0.070312 
+Score two: 0.062500 
+Score three: 0.160156 
+Score four: 0.230469 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.285156 
+Score one: 0.078125 
+Score two: 0.062500 
+Score three: 0.179688 
+Score four: 0.199219 
+Score five: 0.199219 
+Image Captured
+
+Score zero: 0.273438 
+Score one: 0.078125 
+Score two: 0.066406 
+Score three: 0.179688 
+Score four: 0.199219 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.289062 
+Score one: 0.070312 
+Score two: 0.062500 
+Score three: 0.179688 
+Score four: 0.187500 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.277344 
+Score one: 0.070312 
+Score two: 0.058594 
+Score three: 0.191406 
+Score four: 0.183594 
+Score five: 0.214844 
+Image Captured
+
+Score zero: 0.261719 
+Score one: 0.070312 
+Score two: 0.058594 
+Score three: 0.191406 
+Score four: 0.191406 
+Score five: 0.222656 
+Image Captured
+
+Score zero: 0.269531 
+Score one: 0.066406 
+Score two: 0.062500 
+Score three: 0.230469 
+Score four: 0.167969 
+Score five: 0.207031 
+Image Captured
+
+Score zero: 0.226562 
+Score one: 0.062500 
+Score two: 0.042969 
+Score three: 0.253906 
+Score four: 0.183594 
+Score five: 0.226562 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.058594 
+Score two: 0.058594 
+Score three: 0.261719 
+Score four: 0.210938 
+Score five: 0.187500 
+Image Captured
+
+Score zero: 0.207031 
+Score one: 0.058594 
+Score two: 0.050781 
+Score three: 0.281250 
+Score four: 0.183594 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.218750 
+Score one: 0.066406 
+Score two: 0.054688 
+Score three: 0.269531 
+Score four: 0.167969 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.234375 
+Score one: 0.074219 
+Score two: 0.054688 
+Score three: 0.273438 
+Score four: 0.160156 
+Score five: 0.199219 
+Image Captured
+
+Score zero: 0.218750 
+Score one: 0.070312 
+Score two: 0.050781 
+Score three: 0.296875 
+Score four: 0.140625 
+Score five: 0.218750 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.070312 
+Score two: 0.054688 
+Score three: 0.289062 
+Score four: 0.152344 
+Score five: 0.210938 
+Image Captured
+
+Score zero: 0.203125 
+Score one: 0.066406 
+Score two: 0.046875 
+Score three: 0.296875 
+Score four: 0.121094 
+Score five: 0.265625 
+Image Captured
+
+Score zero: 0.210938 
+Score one: 0.066406 
+Score two: 0.046875 
+Score three: 0.277344 
+Score four: 0.105469 
+Score five: 0.292969 
+Image Captured
+
+Score zero: 0.175781 
+Score one: 0.070312 
+Score two: 0.042969 
+Score three: 0.328125 
+Score four: 0.082031 
+Score five: 0.296875 
+Image Captured
+
+Score zero: 0.203125 
+Score one: 0.066406 
+Score two: 0.046875 
+Score three: 0.328125 
+Score four: 0.132812 
+Score five: 0.226562 
+Image Captured
+
+Score zero: 0.222656 
+Score one: 0.070312 
+Score two: 0.054688 
+Score three: 0.277344 
+Score four: 0.140625 
+Score five: 0.234375 
+Image Captured
+
+Score zero: 0.242188 
+Score one: 0.066406 
+Score two: 0.058594 
+Score three: 0.257812 
+Score f

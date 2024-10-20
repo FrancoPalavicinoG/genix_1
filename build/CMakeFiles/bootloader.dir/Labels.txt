@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/CMakeFiles/bootloader
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/CMakeFiles/bootloader.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/CMakeFiles/bootloader-complete.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
