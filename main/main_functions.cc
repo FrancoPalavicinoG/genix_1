@@ -32,6 +32,9 @@ limitations under the License.
 #include <esp_log.h>
 #include "esp_main.h"
 
+#include <string>
+
+
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
 const tflite::Model* model = nullptr;
@@ -127,22 +130,50 @@ void loop() {
     MicroPrintf("Image capture failed.");
   }
 
-  // printf("Imagen capturada:\n");
-  // for (int i = 0; i < kNumCols * kNumRows * kNumChannels; i++) {
-  //   input->data.int8[i] = ((uint8_t *)input->data.uint8)[i];  
-  //   printf("%d, ", input->data.int8[i]);
-  // }
-  // printf("\n");
+/*   printf("Imagen capturada:\n");
+  for (int i = 0; i < kNumCols * kNumRows * kNumChannels; i++) {
+    input->data.int8[i] = ((uint8_t *)input->data.uint8)[i];  
+    // printf("%d, ", input->data.int8[i]);
+   }
+  printf("\n"); */
 
   // Run the model on this input and make sure it succeeds.
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
   }
 
-  TfLiteTensor* output = interpreter->output(0);
+TfLiteTensor* output = interpreter->output(0);
 
-  // Process the inference results.
-  int8_t zero_score = output->data.uint8[zero_Index];
+// Process the inference results.
+int idx = 0;
+int idx2 = 0;
+int8_t max_confidence = output->data.uint8[idx];
+int8_t cur_confidence;
+float max_tmp = -10000.0;
+
+for(int i = 0; i < kCategoryCount; i++) {
+    float tmp = output->data.f[i];
+    cur_confidence = output->data.uint8[i];
+
+    if(max_confidence < cur_confidence) {
+        idx2 = idx;
+        idx = i;
+        max_confidence = cur_confidence;
+    }
+    if (tmp > max_tmp) {
+        max_tmp = tmp;
+    }
+}
+
+std::string detected = kCategoryLabels[idx];
+std::string detected2 = kCategoryLabels[idx2];
+printf("detected: %s\n", detected.c_str());
+printf("detected2: %s\n", detected2.c_str());
+
+  
+
+
+/*   int8_t zero_score = output->data.uint8[zero_Index];
   float zero_score_f = (zero_score - output->params.zero_point) * output->params.scale;
   printf("Score zero: %f \n",zero_score_f);
   int8_t one_score = output->data.uint8[one_Index];
@@ -159,7 +190,7 @@ void loop() {
   printf("Score four: %f \n",four_score_f);
   int8_t five_score = output->data.uint8[five_Index];
   float five_score_f = (five_score - output->params.zero_point) * output->params.scale;
-  printf("Score five: %f \n",five_score_f);
+  printf("Score five: %f \n",five_score_f); */
   // int8_t six_score = output->data.uint8[six_Index];
   // float six_score_f = (six_score - output->params.zero_point) * output->params.scale;
   // printf("Score six: %f \n",six_score_f);
@@ -278,7 +309,7 @@ void run_inference(void *ptr) {
   TfLiteTensor* output = interpreter->output(0);
   
   // Process the inference results.
-  int8_t zero_score = output->data.uint8[zero_Index];
+/*   int8_t zero_score = output->data.uint8[zero_Index];
   float zero_score_f = (zero_score - output->params.zero_point) * output->params.scale;
   printf("Score zero: %f \n",zero_score_f);
   int8_t one_score = output->data.uint8[one_Index];
@@ -295,7 +326,7 @@ void run_inference(void *ptr) {
   printf("Score four: %f \n",four_score_f);
   int8_t five_score = output->data.uint8[five_Index];
   float five_score_f = (five_score - output->params.zero_point) * output->params.scale;
-  printf("Score five: %f \n",five_score_f);
+  printf("Score five: %f \n",five_score_f); */
   // int8_t six_score = output->data.uint8[six_Index];
   // float six_score_f = (six_score - output->params.zero_point) * output->params.scale;
   // printf("Score six: %f \n",six_score_f);

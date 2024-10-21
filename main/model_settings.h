@@ -28,12 +28,13 @@ constexpr int kNumChannels = 1;
 constexpr int kMaxImageSize = kNumCols * kNumRows * kNumChannels;
 
 constexpr int kCategoryCount = 6;
-constexpr int zero_Index = 0;
-constexpr int one_Index = 1;
-constexpr int two_Index = 2;
+
+constexpr int kPersonIndex = 1;
+constexpr int kNotAPersonIndex = 0;
+/* constexpr int two_Index = 2;
 constexpr int three_Index = 3;
 constexpr int four_Index = 4;
-constexpr int five_Index = 5;
+constexpr int five_Index = 5; */
 // constexpr int six_Index = 6;
 // constexpr int seven_Index = 7;
 // constexpr int eight_Index = 8;

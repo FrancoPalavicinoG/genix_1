@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400f15c8: task_wdt_timeout_handling at /home/pedrovillegasss/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/pedrovillegasss/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/pedrovillegasss/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400fbfcc: __d2b at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdlib/mprec.c:798
+0x400fab51: _dtoa_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdlib/dtoa.c:292
+0x400f6035: cvt at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1870
+ (inlined by) _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1307
+0x400fa2bb: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8678: loop at /home/pedrovillegasss/esp/projects_tf/genix/genix_1/main/main_functions.cc:147
+0x400d7f9a: tf_main() at /home/pedrovillegasss/esp/projects_tf/genix/genix_1/main/main.cc:36 (discriminator 1)
+[0m
+[0m
