@@ -1,4 +1,4 @@
-# Install script for directory: /home/pedrovillegasss/esp/idf/esp-idf/components/mbedtls/mbedtls/3rdparty
+# Install script for directory: /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/mbedtls/mbedtls/3rdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,15 +32,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/pedrovillegasss/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pedrovillegasss/esp/projects_tf/genix/genix_1/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
-  include("/home/pedrovillegasss/esp/projects_tf/genix/genix_1/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
+  include("/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
+  include("/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 
