@@ -1,0 +1,139 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp-tflite-micro": "1.2.0" -> "1.3.1"
+Dependency "espressif/esp32-camera": "2.0.8" -> "2.0.13"
+Consider running "idf.py update-dependencies" to update your lock file.
+Processing 4 dependencies:
+[1/4] espressif/esp-nn (1.1.0)
+[2/4] espressif/esp-tflite-micro (1.2.0)
+[3/4] espressif/esp32-camera (2.0.8)
+[4/4] idf (5.4.0)
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+-- Project sdkconfig file /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig
+Loading defaults file /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults...
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults:16 CONFIG_FLASHMODE_QIO was replaced with CONFIG_ESPTOOLPY_FLASHMODE_QIO 
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults:26 CONFIG_MONITOR_BAUD was replaced with CONFIG_ESPTOOLPY_MONITOR_BAUD 
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults:39 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240 
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults:40 CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ 
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults:42 CONFIG_ESP32_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM 
+/var/folders/tq/lvcdsctd0rj76bbwdfl2xmph0000gn/T/kconfgen_tmph7zyp0dc:32 line was updated to CONFIG_ENABLE_TEST_PATTERN=n
+/var/folders/tq/lvcdsctd0rj76bbwdfl2xmph0000gn/T/kconfgen_tmph7zyp0dc:34 line was updated to CONFIG_OV7725_SUPPORT=n
+/var/folders/tq/lvcdsctd0rj76bbwdfl2xmph0000gn/T/kconfgen_tmph7zyp0dc:49 line was updated to CONFIG_SPIRAM_USE_MALLOC=n
+warning: unknown kconfig symbol 'ESPTOOLPY_FLASHSIZE_DETECT' assigned to 'y' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+warning: unknown kconfig symbol 'MONITOR_BAUD_115200B' assigned to 'y' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+warning: unknown kconfig symbol 'MONITOR_BAUD_OTHER_VAL' assigned to '115200' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+warning: unknown kconfig symbol 'ENABLE_TEST_PATTERN' assigned to 'n' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_SIZE' assigned to '-1' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+warning: unknown kconfig symbol 'RTCIO_SUPPORT_RTC_GPIO_DESC' assigned to 'y' in /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/sdkconfig.defaults
+-- Compiler supported targets: xtensa-esp-elf
+-- App "person_detection" version: 04d482d-dirty
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__esp-nn espressif__esp-tflite-micro espressif__esp32-camera esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs static_images tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/app_trace /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/app_update /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/bootloader /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/bootloader_support /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/bt /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/cmock /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/console /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/cxx /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/driver /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/efuse /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp-tls /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_adc /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_app_format /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_bootloader_format /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_coex /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_common /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_ana_cmpr /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_cam /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_dac /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_gpio /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_gptimer /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_i2c /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_i2s /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_isp /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_jpeg /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_ledc /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_mcpwm /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_parlio /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_pcnt /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_ppa /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_rmt /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_sdio /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_sdm /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_sdmmc /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_sdspi /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_spi /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_touch_sens /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_tsens /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_uart /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_driver_usb_serial_jtag /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_eth /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_event /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_gdbstub /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_hid /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_http_client /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_http_server /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_https_ota /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_https_server /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_hw_support /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_lcd /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_local_ctrl /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_mm /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_netif /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_netif_stack /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_partition /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_phy /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_pm /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_psram /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_ringbuf /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_rom /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_security /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_system /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_timer /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_vfs_console /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esp_wifi /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/espcoredump /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-nn /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp32-camera /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/fatfs /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/freertos /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/hal /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/heap /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/http_parser /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/idf_test /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/ieee802154 /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/json /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/log /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/lwip /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/mbedtls /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/mqtt /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/newlib /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/nvs_flash /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/nvs_sec_provider /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/openthread /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/partition_table /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/perfmon /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/protobuf-c /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/protocomm /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/pthread /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/rt /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/sdmmc /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/soc /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/spi_flash /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/spiffs /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/static_images /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/tcp_transport /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/ulp /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/unity /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/usb /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/vfs /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/wear_levelling /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/wifi_provisioning /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/wpa_supplicant /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/xtensa
+-- Configuring done (9.3s)
+-- Generating done (0.4s)
+-- Build files have been written to: /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build
+[1/13] Performing build step for 'bootloader'
+[1/1] cd /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader/esp-idf/esptool_py && /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x400 bytes (4%) free.
+[2/13] No install step for 'bootloader'
+[3/13] Completed 'bootloader'
+[4/13] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[5/13] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[6/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:22:
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/utility:69,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1372,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:28,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/detection_responder.h:22,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:18:
+/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc: In function 'void run_inference(void*)':
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:242:17: warning: unused variable 'output' [-Wunused-variable]
+  242 |   TfLiteTensor* output = interpreter->output(0);
+      |                 ^~~~~~
+[7/13] Linking C static library esp-idf/main/libmain.a
+[8/13] Generating ld/sections.ld
+[9/13] Linking CXX executable person_detection.elf
+[10/13] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/person_detection.bin
+[11/13] cd /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/esptool_py && /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/partition_table/partition-table.bin /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/person_detection.bin
+person_detection.bin binary size 0x6c5c0 bytes. Smallest app partition is 0x180000 bytes. 0x113a40 bytes (72%) free.
+[11/13] cd /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -D IDF_PATH=/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf -D "SERIAL_TOOL=/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python;;/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build -P /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/tty.usbserial-110 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 person_detection.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/tty.usbserial-110
+Connecting.....
+Chip is ESP32-D0WDQ6-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 34:98:7a:b7:20:38
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0007cfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 27648 bytes to 17352...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076f6... (100 %)
+Wrote 27648 bytes (17352 compressed) at 0x00001000 in 0.6 seconds (effective 355.4 kbit/s)...
+Hash of data verified.
+Compressed 443840 bytes to 291980...
+Writing at 0x00010000... (5 %)
+Writing at 0x0001d59b... (11 %)
+Writing at 0x00021f01... (16 %)
+Writing at 0x00026331... (22 %)
+Writing at 0x0002a583... (27 %)
+Writing at 0x0002e931... (33 %)
+Writing at 0x00033f24... (38 %)
+Writing at 0x0003cb3a... (44 %)
+Writing at 0x00042717... (50 %)
+Writing at 0x00047cf0... (55 %)
+Writing at 0x0004cf80... (61 %)
+Writing at 0x000521b5... (66 %)
+Writing at 0x00057727... (72 %)
+Writing at 0x0005e45d... (77 %)
+Writing at 0x00063cee... (83 %)
+Writing at 0x0006b362... (88 %)
+Writing at 0x00071e44... (94 %)
+Writing at 0x000777b4... (100 %)
+Wrote 443840 bytes (291980 compressed) at 0x00010000 in 7.6 seconds (effective 469.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 769.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

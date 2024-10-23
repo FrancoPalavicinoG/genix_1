@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "person_detection",
-    "project_version":    "70b94f4-dirty",
+    "project_version":    "04d482d-dirty",
     "project_path":       "/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1",
     "idf_path":           "/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf",
     "build_dir":          "/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build",
