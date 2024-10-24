@@ -109,7 +109,7 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, int8_t* i
     }
   }
 #else
-  MicroPrintf("Image Captured\n");
+  // MicroPrintf("Image Captured\n");
   // We have initialised camera to grayscale
   // Just quantize to int8_t
   for (int i = 0; i < image_width * image_height; i++) {

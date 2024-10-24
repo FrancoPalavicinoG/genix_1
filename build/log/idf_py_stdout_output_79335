@@ -309,4 +309,117 @@ detected: palm
 detected2: palm
 Image Captured
 
-d
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm_moved
+detected2: L
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: fist_moved
+detected2: palm
+Image Captured
+
+detected: fist_moved
+detected2: palm
+Image Captured
+
+detected: fist_moved
+detected2: L
+Image Captured
+
+detected: ok
+detected2: fist_moved
+Image Captured
+
+detected: ok
+detected2: L
+Image Captured
+
+detected: fist_moved
+detected2: L
+Image Captured
+
+detected: fist_moved
+detected2: L
+Image Captured
+
+detected: fist_moved
+detected2: palm
+Image Captured
+
+detected: index
+detected2: palm
+Image Captured
+
+detected: ok
+detected2: fist_moved
+Image Captured
+
+detected: ok
+detected2: palm
+Image Captured
+
+detected: ok
+detected2: L
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: palm
+detected2: palm
+Image Captured
+
+detected: ok
+detected2: fist_moved
+Image Captured
+
+detected: palm_moved
+detected2: index
+Image Captured
+
+detected: ok
+detected2: index
+Image Captured
+
+detected: ok
+detected2: palm
+Image Captured
+
+detected: palm_moved
+detected2: palm
+Image Captured
+
+detected: index
+detected2: fist_moved
+Image Captured
+
+detected: palm_moved
+detected2: index
+Image Captured
+
+detected: palm_moved
+detected2: palm

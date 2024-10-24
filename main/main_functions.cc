@@ -129,8 +129,9 @@ void loop() {
 
   std::string detected = kCategoryLabels[idx];
   std::string detected2 = kCategoryLabels[idx2];
-  printf("detected: %s\n", detected.c_str());
-  printf("detected2: %s\n", detected2.c_str());
+  
+  printf("%s ;%s\n", detected.c_str(), detected2.c_str());
+  // printf("detected2: %s\n", detected2.c_str());
 
   vTaskDelay(100); // to avoid watchdog trigger
 }

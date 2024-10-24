@@ -1,0 +1,45 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader/esp-idf/esptool_py && /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x400 bytes (4%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:7:
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/utility:69,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1372,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/managed_components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:28,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/detection_responder.h:22,
+                 from /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/main/main_functions.cc:3:
+/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable person_detection.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/person_detection.bin
+[9/10] cd /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/esp-idf/esptool_py && /Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/partition_table/partition-table.bin /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/person_detection.bin
+person_detection.bin binary size 0x6db50 bytes. Smallest app partition is 0x180000 bytes. 0x1124b0 bytes (71%) free.
+[9/10] cd /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -D IDF_PATH=/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf -D "SERIAL_TOOL=/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python;;/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build -P /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/tty.usbserial-110 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 person_detection.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/tty.usbserial-110
+
+A fatal error occurred: Could not open /dev/tty.usbserial-110, the port is busy or doesn't exist.
+([Errno 16] could not open port /dev/tty.usbserial-110: [Errno 16] Resource busy: '/dev/tty.usbserial-110')
+
+FAILED: CMakeFiles/flash /Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build/CMakeFiles/flash 
+cd /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -D IDF_PATH=/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf -D "SERIAL_TOOL=/Users/fpalavicino.trebulcogmail.com/esp/idf-tools/python_env/idf5.4_py3.13_env/bin/python;;/Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/fpalavicino.trebulcogmail.com/esp/projects_tf/genix_1/build -P /Users/fpalavicino.trebulcogmail.com/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.
