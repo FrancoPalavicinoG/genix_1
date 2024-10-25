@@ -16,10 +16,10 @@ limitations under the License.
 #include "model_settings.h"
 
 const char* kCategoryLabels[kCategoryCount] = {
-    "0",
-    "1", 
+    "1",
     "2", 
     "3", 
     "4", 
-    "5"
+    "5", 
+    "6"
 };

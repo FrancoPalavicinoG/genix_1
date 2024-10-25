@@ -18,6 +18,8 @@
 #include "esp_main.h"
 
 #include <string>
+#include "driver/gpio.h"
+#define LED_PIN GPIO_NUM_4 
 
 
 namespace {
@@ -36,6 +38,9 @@ static uint8_t *tensor_arena;
 }  
 
 void setup() {
+
+  gpio_reset_pin(LED_PIN); 
+  gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
 
   model = tflite::GetModel(g_person_detect_model_data);
   if (model->version() != TFLITE_SCHEMA_VERSION) {
@@ -93,6 +98,8 @@ void loop() {
     MicroPrintf("Image capture failed.");
   }
 
+  gpio_set_level(LED_PIN, 1);
+
   /*   printf("Imagen capturada:\n");
   for (int i = 0; i < kNumCols * kNumRows * kNumChannels; i++) {
     input->data.int8[i] = ((uint8_t *)input->data.uint8)[i];  
@@ -129,10 +136,11 @@ void loop() {
 
   std::string detected = kCategoryLabels[idx];
   std::string detected2 = kCategoryLabels[idx2];
-  
-  printf("%s ;%s\n", detected.c_str(), detected2.c_str());
+
+  printf("%s;%s. \n", detected.c_str(), detected2.c_str());
   // printf("detected2: %s\n", detected2.c_str());
 
+  gpio_set_level(LED_PIN, 0);
   vTaskDelay(100); // to avoid watchdog trigger
 }
 #endif
